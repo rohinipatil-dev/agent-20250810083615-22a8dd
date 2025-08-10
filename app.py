@@ -114,7 +114,7 @@ def build_messages(contexts: List[str], query: str) -> List[Dict[str, str]]:
 
 def generate_answer(messages: List[Dict[str, str]]) -> str:
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-5",
         messages=messages,
         temperature=0.2,
     )
